@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP CONTENT</title>
+
+<style>
+@font-face {font-family: 'Manrope';
+	src: url(Manrope-VariableFont_wght.ttf);}
+@font-face{font-family: 'Relationship of Melodrame';
+	src: url(relationship-of-melodrame.ttf);}
+@font-face{font-family: 'Aston script';
+	src: url(FontsFree-Net-AstonScript.ttf);}
+@font-face{font-family: Merriweather;
+	src: url(Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf);}
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to{opacity: 1;}
+	}
+body{background-image: url('BACKGROUND.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 67px;
+	animation: fadeIn 1.5s ease;
+	background-attachment: fixed;}
+h1{background:darkred;
+	font-family: relationship of melodrame;
+	color: lightyellow;
+	text-align:center;
+	padding:30px;
+	margin-bottom:0;
+	font-size: 60px;}
+nav{display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	background-color: lightyellow;}
+nav button{background:none;
+	border:none;
+	padding:15px 20px;
+	cursor:pointer;
+	font-size:15px;
+	color: darkred;
+	transition: 150ms ease;}
+nav button:hover{background:#F5F0C8;
+	color: #EF6910;
+	box-shadow: 0 5px 5px -5px #5C0C06;}
+h2{color: darkred;
+	font-size: 30px;
+	font-family: aston script;
+	margin-bottom: 3px;
+	text-shadow: 1px 3px 3px #EF6910;}
+.lesson{display:none;
+	padding:30px;
+	max-width:900px;
+	margin:auto;}
+
+.active{
+display:block;
+}
+
+.section{background:lightyellow;
+	color: darkred;	
+	font-family: manrope;
+	font-size: 15px;
+	margin:15px 0;
+	padding:15px;
+	border-radius:8px;
+	cursor:pointer;
+	transition: 150ms ease;}
+.section:hover{background-color:#F5F0C8;}
+.content{display:none;
+	padding-top:10px;}
+ul{list-style: none;
+	line-height: 20px;}
+img{border-radius: 10pt;
+	transition: 150ms ease;}
+img:hover{box-shadow: 5px 5px 5px #EF6910;
+	scale: 1.1;}
+.bck {text-decoration: none;
+	border-radius: 20pt;
+	padding: 8px;
+	background-color: darkred;
+	color: lightyellow;
+	font-size: 10px;
+	 font-family: forte;
+	 transition: 150ms ease;
+	 box-shadow: 5px 5px 10px black;}
+ .bck:hover{background: lightyellow;
+	color: darkred;
+	scale: 1.1;}
+
+</style>
+
+<script>
+
+function openLesson(id){
+
+var lessons=document.getElementsByClassName("lesson");
+
+for(var i=0;i<lessons.length;i++){
+lessons[i].style.display="none";
+}
+
+document.getElementById(id).style.display="block";
+
+}
+
+function toggleContent(id){
+
+var x=document.getElementById(id);
+
+if(x.style.display==="block"){
+x.style.display="none";
+}else{
+x.style.display="block";
+}
+
+}
+
+</script>
+</head>
+<body>
+<h1>AP Content</h1>
+
+
+<nav>
+<button onclick="openLesson('l1')">Lesson 1</button>
+<button onclick="openLesson('l2')">Lesson 2</button>
+<button onclick="openLesson('l3')">Lesson 3</button>
+<button onclick="openLesson('l4')">Lesson 4</button>
+<button onclick="openLesson('l5')">Lesson 5</button>
+<button onclick="openLesson('l6')">Lesson 6</button>
+</nav>
+
+
+<div id="l1" class="lesson active">
+
+<h2>Pambansang Kaunlaran</h2>
+
+<div class="section" onclick="toggleContent('c1')">
+Definition
+<div id="c1" class="content">
+Pambansang kaunlaran ay kalagayan kung saan umaangat ang ekonomiya at kalidad ng buhay ng mamamayan.
+</div>
+</div>
+
+<div class="section" onclick="toggleContent('c2')">
+Mga Konsepto
+<div id="c2" class="content">
+<ul>
+<li><b>Pagbabago</b> – proseso ng pagiging iba o pag-iba ng lipunan.</li>
+<li><b>Pag-unlad</b> – pagtaas ng antas ng pamumuhay.</li>
+<li><b>Pagsulong</b>– pag-usad patungo sa layunin.</li>
+<li><b>Ebolusyon</b> – unti-unting pagbabago sa mahabang panahon.</li>
+</ul>
+</div>
+</div>
+<div class="section" onclick="toggleContent('c3')">
+Salik ng Pag-unlad
+<div id="c3" class="content">
+<ul>
+<li>Likas na yaman</li> 
+<li>yamang tao</li> 
+<li>kapital</li> 
+<li>teknolohiya</li>
+<ul>
+</div>
+</div>
+<img src="kaunlaranone.jpg" width="300px" height="200px">
+<img src="kaunlarantwo.jpg" width="300px" height="200px">
+
+</div>
+
+<!-- LESSON 2 -->
+<div id="l2" class="lesson">
+<h2>Sektor ng Agrikultura</h2>
+<div class="section" onclick="toggleContent('c4')">
+Mga Gawain
+<div id="c4" class="content">
+<ul>
+<li><b>Pagsasaka:</b> pagtatanim ng mga pananim tulad ng palay, mais, at niyog, na nagsisilbing pundasyon ng ekonomiya at pangunahing pinagkukunan ng pagkain sa Pilipinas<li>
+<li><b>Pangingisda:</b> nanghuhuli ng mga isda at yamang-dagat (tulad ng sugpo at pugita) sa dagat, ilog, o lawa</li>
+<li><b>Paghahayupan: </b>nakatuon sa pag-aalaga, pagpaparami, at pagpapalaki ng mga hayop</li> 
+<li><b>Paggugubat: </b>kaugnayan sa pangangalaga, paggamit, at paglinang ng mga kagubatan at likas na yaman nito.</li>
+</ul>
+</div>
+</div>
+<div class="section" onclick="toggleContent('c5')">
+Kahalagahan
+<div id="c5" class="content">
+<ul>
+<li>Pinagmumulan ng pagkain</li>
+<li> nagbibigay ng trabaho</li>
+<li> pinagkukunan ng hilaw na materyales para sa industriya</li>
+<li> nagpapasok ng dolyar sa Pilipinas </li>
+</ul>
+</div>
+</div>
+<div class="section" onclick="toggleContent('c6')">
+Suliranin
+<div id="c6" class="content">
+<ul> <b> Pagsasaka</b>
+<li>pagliit ng lupang sakahan</li>
+<li>paggamit ng makabagong teknolohiya</li>
+<li>kakulangan ng mga pasilidad at imprastraktura sa kabukiran</li>
+<li>kakulangan ng suporta mula sa iba pang sektor</li>
+<li>pagbibigay prayoridad sa sektor ng industriya, pagdagsa ng dayuhang kalakal</li>
+<li>Climate Change</li>
+</ul>
+<ul><b> Pangingisda </b>
+<li>mapanirang operasyon ng malalaking komersiyal na mangingisda</li>
+<li>epekto ng polusyon sa pangisdaan</li>
+<li>lumalaking populasyon ng bansa</li>
+<li>kahirapan sa hanay ng mga mangingisda</li>
+</ul>
+<ul><b>Paghahayupan</b>
+<li>pagkakaroon ng mga peste sa alagang hayop tulad ng baboy at manok</li>
+</ul>
+<ul><b> Paggugubat </b>
+<li>mabilis na pagkaubos ng mga likas na yaman</li>
+</ul>
+</div>
+</div>
+<img src="agrikulturaone.jpg" width="300px" height="200px">
+<img src="agrikulturatwo.jpg" width="300px" height="200px">
+
+</div>
+
+<!-- LESSON 3 -->
+
+<div id="l3" class="lesson">
+
+<h2>Sektor ng Industriya</h2>
+
+<div class="section" onclick="toggleContent('c7')">
+Sub-sektor
+<div id="c7" class="content">
+<ul>
+<li><b>Pagmimina:</b> Pagkuha at pagproseso ng mga yamang mineral (metal, di-metal, o enerhiya) upang gawing tapos na produkto o kabahagi ng isang yaring kalakal</li>
+<li><b>Pagmamanupaktura:</b> Paggawa ng mga produkto sa pamamagitan ng manual labor o ng mga makina</li>
+<li><b>Konstruksyon:</b> Pagtatayo ng mga gusali, estruktura, at iba pang land improvements</li>
+<li><b>Utilities:</b>Paglalatag ng mga imprastraktura at angkop na teknolohiya upang maihatid ang serbisyo</li>
+</ul>
+</div>
+</div>
+
+<div class="section" onclick="toggleContent('c8')">
+Kahalagahan
+<div id="c8" class="content">
+Lumilikha ng trabaho, nagpoproseso ng hilaw na materyales, at nagpapataas ng kita ng bansa.
+</div>
+</div>
+<img src="industriyaone.jpg" width="300px" height="200px">
+<img src="industriyatwo.jpg" width="300px" height="200px">
+</div>
+
+<!-- LESSON 4 -->
+<div id="l4" class="lesson">
+<h2>Sektor ng Paglilingkod</h2>
+<div class="section" onclick="toggleContent('c9')">
+Mga Serbisyo
+<div id="c9" class="content">
+Transportasyon, komunikasyon, kalakalan, pananalapi, real estate, at serbisyo ng pamahalaan.
+</div>
+</div>
+<div class="section" onclick="toggleContent('c10')">
+Ahensiya
+<div id="c10" class="content">
+<ul>
+<li><b>DOLE:</b>trabaho at manggagawa</li>
+<li><b>OWWA:</b>kapakanan ng OFW</li>
+<li><b>POEA:</b>overseas employment</li>
+<li><b>TESDA: </b>skills training</li>
+<li><b>PRC:</b> lisensya ng propesyon</li>
+<li><b>CHED:</b>edukasyon sa kolehiyo</li>
+<ul>
+</div>
+</div>
+<img src="paglilingkodone.jpg" width="300px" height="200px">
+<img src="paglilingkodtwo.jpg" width="300px" height="200px">
+
+</div>
+
+<!-- LESSON 5 -->
+
+<div id="l5" class="lesson">
+
+<h2>Impormal na Sektor</h2>
+
+<div class="section" onclick="toggleContent('c11')">
+Ano Ito
+<div id="c11" class="content">
+Sektor na hindi rehistrado sa pamahalaan at walang pormal na dokumento sa negosyo.
+</div>
+</div>
+
+<div class="section" onclick="toggleContent('c12')">
+Halimbawa
+<div id="c12" class="content">
+Street vendors, pedicab drivers, karpintero, sidewalk sellers.
+</div>
+</div>
+
+<div class="section" onclick="toggleContent('c13')">
+Kahalagahan
+<div id="c13" class="content">
+Nagbibigay kabuhayan sa mga taong walang pormal na trabaho.
+</div>
+</div>
+<img src="impormalone.jpg" width="300px" height="200px">
+<img src="impormaltwo.jpg" width="300px" height="200px">
+
+</div>
+
+<!-- LESSON 6 -->
+
+<div id="l6" class="lesson">
+
+<h2>Kalakalang Panlabas</h2>
+
+<div class="section" onclick="toggleContent('c14')">
+Import at Export
+<div id="c14" class="content">
+Export – pagluluwas ng produkto.<br>
+Import – pag-aangkat ng produkto.
+</div>
+</div>
+
+<div class="section" onclick="toggleContent('c15')">
+Patakaran
+<div id="c15" class="content">
+<b>Tariff:</b> buwis sa imported goods<br>
+<b>Quota:</b> limitasyon ng dami ng import<br>
+<b>Subsidy:</b> tulong ng gobyerno sa lokal na produkto<br>
+</div>
+</div>
+<div class="section" onclick="toggleContent('c16')">
+International Organizations
+<div id="c16" class="content">
+<b> WTO: </b> world trade rules<br>
+<b>APEC: </b> economic cooperation sa Asia-Pacific<br>
+<b>ASEAN:</b> economic cooperation sa Southeast Asia
+</div>
+</div>
+<img src="panlabasone.jpg" width="300px" height="200px">
+<img src="panlabastwo.jpg" width="300px" height="200px">
+</div>
+<a href="E-PORTFOLIO.html" class="bck"> back to home </a>
+</body>
+</html>

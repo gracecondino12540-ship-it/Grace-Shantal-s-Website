@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head> <title> E-PORTFOLIO </title> 
+<style>
+@font-face {font-family: 'Manrope';
+	src: url(Manrope-VariableFont_wght.ttf);}
+@font-face{font-family: 'Relationship of Melodrame';
+	src: url(relationship-of-melodrame.ttf);}
+@font-face{font-family: 'Aston script';
+	src: url(FontsFree-Net-AstonScript.ttf);}
+@font-face{font-family: Merriweather;
+	src: url(Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf);}
+@keyframes fadeIn{
+	from {opacity: 0;}
+	to{opacity: 1;}
+	}
+
+body {background-image: url('BACKGROUND.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	line-height: 67px;
+	animation: fadeIn 1.5s ease;}
+.header {font-size: 110px;
+	font-family: Relationship of Melodrame;
+	margin-bottom: 5px;
+	margin-top: 45px;
+	color: Darkred;}
+.subheader {font-family: Aston script;
+	font-size: 30px;
+	margin-top: 6px;
+	color: darkred;}
+hr {background-color: darkred;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	height: 2px;}
+.cursor {position: absolute;
+ 	width: 20px;
+	height: 20px;
+   	background: lightyellow;
+	border-radius: 50%;	
+	pointer-events: none; 
+	transform: translate(-50%, -50%);
+	transition: transform 0.1s ease-out;
+	box-shadow: 0 0 10px white, 0 0 20px white;}
+.menu {list-style: none;           
+	align-items: center; 
+	display: flex;
+	gap: 67px;
+	justify-content: center;}
+.menu li {margin: 0;
+	padding: 0;}
+.link { font-family: 'Manrope';
+	font-size: 20px;
+	color: darkred;
+	text-decoration: none;
+	 line-height: 1;       
+	display: block;
+	padding-bottom: 15px;
+	transition: 150ms ease;}
+.link:hover{color: #EF6910;
+	box-shadow: 0 5px 5px -5px #5C0C06;}
+.picone, .pictwo, .picthree{margin-top: 20px;
+	border-radius: 10pt;
+	transition: 150ms ease;}
+.picone:hover, .pictwo:hover, .picthree:hover{scale: 1.2;
+	box-shadow: 1px 3px 5px darkred;}
+.gallery{display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<script>
+  const cursor = document.getElementById('cursor');
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  });
+</script>
+
+<p class="header">
+Grace Shantal's
+</p>
+<p class="subheader">
+Personal Webpage
+</p>
+<hr>
+
+<ul class="menu">
+<li> <a href="one.html" class="link"> My Personal Space </a></li>
+<li><a href="two.html" class="link"> TLE-ICT Content </a></li>
+<li><a href="three.html" class="link"> Third QTR ICT Content </a></li>
+<li><a href="four.html" class="link"> AP Content </a></li>
+</ul>
+<div class="gallery">
+<img class="pictwo" src="pictwo.jpg" alt="image two" width="200px" height="300px">
+<img class="picone" src="picone.jpg" alt="image one" width="200px" height="300px">
+<img class="picthree" src="picthree.jpg" alt="image three" width="200px" height="300px">
+
+
+</div>
+</body>
+</html>
